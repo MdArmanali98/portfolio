@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- Typing Script CDN Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"></script>
+
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Nav Section Start Here -->
+    <nav>
+        <div class="container nav_container">
+            <a href="index.html">
+                <h4><span>Port</span>Folio</h4>
+            </a>
+            <ul class="nav_menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#skills">Skills</a></li>
+                
+                
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+    <!-- Nav Section End Here -->
+
+    <!-- Header Section Start Here -->
+    <header>
+        <div class="container header_container" id="home">
+            <div class="header_left">
+                <div class="header_left_img">
+                    <img src="arm.JPG" alt="Model Image">
+                </div>
+            </div>
+            <div class="header_right">
+                <div class="text-1">Hiii,</div>
+                <div class="text-2">Md Arman Ali</div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
+                <a href="" class="btn">Hire Me</a>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End Here -->
+
+    <!-- About Me Section Start Here -->
+    <section class="about" id="about">
+        <h2 class="border_bottom">About Me</h2>
+        <div class="container about_container">
+            <div class="about-img">
+                <img src="arm2.jpg" alt="about model">
+            </div>
+            <div class="about-text">
+                <div class="text">
+                    I am Arman and I'm a <span class="typing-2"></span>
+                </div>
+                <p>I Belong to Aurangabad District Of (Bihar), India Now I am Pursuing B-tech Graducation, Branch Electronic & Communication Engineering, Now I am in 3rd Year</p>
+                <a href="Resume.pdf" class="btn">Download CV</a>
+                
+            </div>
+        </div>
+    </section>
+    <!-- About Me Section End Here -->
+
+    <!-- My Services Section Start Here -->
+    <div class="services" id="service">
+        <h2 class="border_bottom">My Services</h2>
+        <div class="container services_container">
+            <div class="cards">
+                <div class="card">
+                    <div class="sbox">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Web Design</h3>
+                        <p>User Experience (UX) Design: This involves creating a
+                             website design that provides a positive experience for the user. 
+                            UX design focuses on usability, accessibility, and user satisfaction.</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="sbox">
+                        <i class="fa-solid fa-file-code"></i>
+                        <h3>Backend Devlopement</h3>
+                        <p>Server-Side Programming: This involves writing code that 
+                            runs on the server-side to manage data and application logic. 
+                            Popular programming languages for 
+                            backend development include Python, Node.js PHP, and Java.</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="sbox">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h3>Web Development</h3>
+                        <p>Responsive Design: Responsive design is the process of creating
+                             a website that adapts to different screen sizes and devices. 
+                             This is essential 
+                        for ensuring a good user experience on
+                         both desktop and mobile devices.<span id="dots">...</span><span id="more">
+                            Information Architecture: Information architecture is the process of organizing and structuring website content in a way that makes it easy for users to find what they're looking for. This involves creating a clear site structure and navigation system.
+
+Branding: A website should reflect the client's brand identity. A web design service may offer branding services, such as creating a logo or brand style guide.
+
+Content Creation: Content is a crucial aspect of a website. A web design service may offer content creation services, such as copywriting or visual content creation.
+
+Testing and Optimization: A web design service may offer testing and optimization services to ensure the website is functioning properly and performing well. This may include A/B testing, user testing, and performance optimization.</span></p>
+<button onclick="myFunction()" id="myBtn">Read more</button>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- My Services Section End Here -->
+
+    <!-- My Skills Section Start Here -->
+    <div class="skills" id="skills">
+        <div class="new">
+            <h2 class="border_bottom">My Skills</h2>
+        </div>
+        <div class="container skills_container">
+            <div class="bar">
+                <div class="info">
+                    <span>HTML</span>
+                </div>
+                <div class="progress-line html">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>CSS</span>
+                </div>
+                <div class="progress-line css">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>c++</span>
+                </div>
+                <div class="progress-line jquery">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>javaScript</span>
+                </div>
+                <div class="progress-line python">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>DBMS</span>
+                </div>
+                <div class="progress-line mysql">
+                    <span></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- My Skills Section End Here -->
+
+    <!-- My Portfolio Section Start Here -->
+  
+    <!-- My Portfolio Section End Here -->
+
+    <!-- My Courses Section Start Here -->
+    
+        </div>
+    </div>
+    <!-- My Courses Section End Here -->
+
+    
+            </article>
+        </div>
+    </section>
+    <!-- FAQs Section End Here -->
+
+    <!-- Footer Section Start Here -->
+    <footer>
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html" class="footer_logo">
+                    <h4>ARMAN</h4>
+                </a>
+                <h2>How are You Bro...</h2>
+            </div>
+
+            <div class="footer_2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy & Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Refund Ploicy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_4">
+                <h4 id="contact">Contact Me</h4>
+                <div>
+                    <p>+91 6204237464</p>
+                    
+                    <p class="mail">mdarmanali628762@gmail.com</p>
+                </div>
+                <ul class="footer_social">
+                    <li><a href="https://www.facebook.com/mdwasif.ali.39"> <i class="fa-brands fa-facebook-f"></i> </a></li>
+                    <li><a href="https://www.instagram.com/_arman_a98/"> <i class="fa-brands fa-instagram"></i> </a></li>
+                    <li><a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fmd-arman-ali-b3954220b&e=AT23H3sAX7cUsgZff7xth6HoIh1LHcZB76_gLCi2q1-to3at2IiPxLhc0P3D6lQdXUCq1Ds7S-bBiNmcRZyBZhUFLc71Z0_6D5k4_d4"> <i class="fa-brands fa-linkedin"></i> </a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="footer_copyright">
+            <small>Copyright &copy; SoftWare Devloper</small>
+        </div>
+    </footer>
+    <!-- Footer Section End Here -->
+
+
+    <!-- Custom Javascript File Link -->
+    <script src="script.js"></script>
+</body>
+
+</html>
